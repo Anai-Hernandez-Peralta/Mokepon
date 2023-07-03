@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Sedgwick+Ave+Display&display=swap');
+body {
+    font-family: 'Sedgwick Ave Display', cursive;
+    background-color: #698269;
+}
+
+#seleccionar-mascota {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: black;
+    font-size: 60px ;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.subtitulo {
+    color: black;
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #B99B6B;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #B99B6B;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    background-color: #AA5656 ;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #AA5656;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: #03001C;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+#mensajes {
+    width: 280px;
+    background: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultado {
+    font-family: 'Courgette', cursive;
+}
+
+#boton-reiniciar {
+    border:none;
+    color: #1A0000;
+    font-family: 'Courgette', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #B99B6B;
+    color: black;
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+} 
+
+@media (max-width: 300px) {
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
